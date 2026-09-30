@@ -1,0 +1,1129 @@
+/*======================================
+ GOOGLE FONTS
+=======================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Great+Vibes&family=Poppins:wght@300;400;500;600&display=swap');
+
+/*======================================
+ RESET
+=======================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#fbf8f1;
+
+    color:#3a2f2a;
+
+    overflow-x:hidden;
+
+    line-height:1.7;
+}
+
+/*======================================
+ COLORS
+=======================================*/
+
+:root{
+
+    --gold:#c8a96a;
+
+    --darkGold:#9b7b3e;
+
+    --ivory:#eaaa13;
+
+    --white:#c31d1d;
+
+    --maroon:#5c0f19;
+
+    --text:#40352d;
+
+    --shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+/*======================================
+ COMMON
+=======================================*/
+
+section{
+
+    padding:90px 8%;
+
+}
+
+.section{
+
+    position:relative;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-title h4{
+
+    font-family:'Cinzel',serif;
+
+    font-size:34px;
+
+    color:var(--maroon);
+
+    letter-spacing:2px;
+
+}
+
+.gold-line{
+
+    width:120px;
+
+    height:3px;
+
+    background:linear-gradient(to right,transparent,var(--gold),transparent);
+
+    margin:20px auto;
+
+}
+
+/*======================================
+ HERO
+=======================================*/
+
+.hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+    background:
+
+    linear-gradient(rgba(20,20,20,.55),
+
+    rgba(20,20,20,.55)),
+
+    url("images/palace.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at center,
+
+    rgba(255,255,255,.08),
+
+    transparent 70%);
+
+}
+
+.hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    padding:40px;
+
+}
+
+.welcome{
+
+    color:white;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    font-size:14px;
+
+    margin-bottom:20px;
+
+}
+
+.invite-title{
+
+    font-family:'Cinzel',serif;
+
+    color:#fff;
+
+    font-size:28px;
+
+    margin-bottom:30px;
+
+    font-weight:400;
+
+}
+
+.couple{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:95px;
+
+    color:white;
+
+    font-weight:normal;
+
+    line-height:1.2;
+
+}
+
+.couple span{
+
+    color:var(--gold);
+
+    margin:0 20px;
+
+}
+
+.subtitle{
+
+    color:#eee;
+
+    font-size:18px;
+
+    margin-top:20px;
+
+}
+
+.hero-divider{
+
+    width:220px;
+
+    height:2px;
+
+    background:linear-gradient(to right,transparent,var(--gold),transparent);
+
+    margin:40px auto;
+
+}
+
+.date-box{
+
+    display:inline-block;
+
+    padding:25px 45px;
+
+    margin-top:15px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+}
+
+.date-box h2{
+
+    font-family:'Cinzel',serif;
+
+    color:var(--gold);
+
+    font-size:34px;
+
+}
+
+.date-box p{
+
+    color:white;
+
+    margin-top:10px;
+
+    letter-spacing:2px;
+
+}
+
+/*======================================
+ BUTTON
+=======================================*/
+
+.gold-btn{
+
+    display:inline-block;
+
+    margin-top:45px;
+
+    padding:16px 45px;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#d9bd82,#b38845);
+
+    color:white;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    transition:.4s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+.gold-btn:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.3);
+
+}
+
+/*======================================
+ SCROLL TEXT
+=======================================*/
+
+.scroll-text{
+
+    background:white;
+
+    text-align:center;
+
+    padding:18px;
+
+}
+
+.scroll-text p{
+
+    color:var(--maroon);
+
+    letter-spacing:2px;
+
+    font-size:15px;
+
+}
+
+/*======================================
+ INVITATION
+=======================================*/
+
+.invitation-card{
+
+    max-width:900px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:60px;
+
+    border-radius:25px;
+
+    box-shadow:var(--shadow);
+
+    border-top:5px solid var(--gold);
+
+    text-align:center;
+
+}
+
+.invitation-card p{
+
+    font-size:18px;
+
+    color:#555;
+
+    margin-bottom:25px;
+
+}
+
+.quote{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:42px;
+
+    color:var(--gold);
+
+}
+
+/*======================================
+ COUPLE
+=======================================*/
+
+.couple-wrapper{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:50px;
+
+    flex-wrap:wrap;
+
+}
+
+.person-card{
+
+    width:340px;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:40px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.4s;
+
+}
+
+.person-card:hover{
+
+    transform:translateY(-12px);
+
+}
+
+.photo{
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    margin:auto;
+
+    background:#ece7db;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:#888;
+
+    border:5px solid var(--gold);
+
+    margin-bottom:30px;
+
+}
+
+.person-card h2{
+
+    font-family:'Cinzel',serif;
+
+    color:var(--maroon);
+
+    margin-bottom:15px;
+
+}
+
+.person-card h5{
+
+    color:var(--gold);
+
+    font-size:18px;
+
+    margin-top:12px;
+
+    font-weight:600;
+
+}
+
+.heart{
+
+    font-size:70px;
+
+    color:var(--gold);
+
+}
+
+/*======================================
+ STORY
+=======================================*/
+
+.story-card{
+
+    max-width:850px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:25px;
+
+    padding:60px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.story-card h2{
+
+    font-family:'Great Vibes',cursive;
+
+    font-size:54px;
+
+    color:var(--gold);
+
+    margin-bottom:25px;
+
+}
+
+.story-card p{
+
+    font-size:18px;
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+/*======================================
+ COUNTDOWN
+=======================================*/
+
+.countdown-box{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:30px;
+
+    flex-wrap:wrap;
+
+}
+
+.time{
+
+    width:180px;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.time h2{
+
+    font-size:48px;
+
+    color:var(--gold);
+
+    font-family:'Cinzel',serif;
+
+}
+
+.time span{
+
+    color:#666;
+
+    letter-spacing:2px;
+
+}
+/*======================================
+ FAMILY SECTION
+======================================*/
+
+.family-container{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+}
+
+.family-card{
+    width:380px;
+    background:#fff;
+    padding:45px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    border-top:5px solid var(--gold);
+    transition:.4s;
+}
+
+.family-card:hover{
+    transform:translateY(-10px);
+}
+
+.family-card h2{
+    font-family:'Cinzel',serif;
+    color:var(--maroon);
+    margin-bottom:25px;
+}
+
+.family-card h3{
+    color:var(--darkGold);
+    margin:12px 0;
+    font-weight:600;
+}
+
+.family-card p{
+    font-size:24px;
+    color:var(--gold);
+}
+
+.family-card span{
+    display:block;
+    margin-top:20px;
+    color:#666;
+}
+
+
+/*======================================
+ EVENTS
+======================================*/
+
+.events{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+}
+
+.event-card{
+    background:#fff;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    transition:.4s;
+    border-bottom:4px solid var(--gold);
+}
+
+.event-card:hover{
+    transform:translateY(-10px);
+}
+
+.event-card h2{
+    font-family:'Cinzel',serif;
+    color:var(--maroon);
+    margin-bottom:20px;
+    font-size:24px;
+}
+
+.event-card p{
+    font-size:18px;
+    margin-bottom:10px;
+    color:#555;
+}
+
+.event-card span{
+    color:var(--gold);
+    font-weight:600;
+}
+
+
+/*======================================
+ VENUE
+======================================*/
+
+.venue-card{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    padding:55px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:var(--shadow);
+}
+
+.venue-card h2{
+    font-family:'Cinzel',serif;
+    color:var(--maroon);
+    margin-bottom:20px;
+}
+
+.venue-card p{
+    color:#555;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+
+
+
+/*======================================
+ Reception
+======================================*/
+
+.Reception-card{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    padding:55px;
+    border-radius:25px;
+    text-align:center;
+    box-shadow:var(--shadow);
+}
+
+.Reception-card h2{
+    font-family:'Cinzel',serif;
+    color:var(--maroon);
+    margin-bottom:20px;
+}
+
+.Reception-card p{
+    color:#555;
+    font-size:18px;
+    margin-bottom:30px;
+}
+
+
+
+
+
+/*======================================
+ GALLERY
+======================================*/
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.gallery-item{
+    height:280px;
+    border-radius:20px;
+    background:#ece6d8;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#777;
+    font-size:20px;
+    font-weight:600;
+    transition:.4s;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.gallery-item:hover{
+    transform:scale(1.05);
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+}
+
+
+
+.photo{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    margin:auto;
+    background:#ece7db;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#888;
+    border:5px solid var(--gold);
+    margin-bottom:30px;
+
+    overflow:hidden;
+}
+
+.photo img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+
+
+
+
+
+/*======================================
+ GIFT SECTION
+======================================*/
+
+.gift-card{
+    max-width:700px;
+    margin:auto;
+    background:#fff;
+    padding:60px;
+    text-align:center;
+    border-radius:25px;
+    box-shadow:var(--shadow);
+}
+
+.qr-box{
+    width:220px;
+    height:220px;
+    margin:auto;
+    margin-bottom:35px;
+    border:4px dashed var(--gold);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:600;
+    color:#888;
+}
+
+.gift-card h3{
+    font-family:'Cinzel',serif;
+    color:var(--maroon);
+    margin-bottom:20px;
+}
+
+.gift-card p{
+    color:#666;
+}
+
+
+/*======================================
+ RSVP
+======================================*/
+
+.rsvp-card{
+    max-width:700px;
+    margin:auto;
+    background:linear-gradient(135deg,#fff,#fdf7ec);
+    padding:60px;
+    text-align:center;
+    border-radius:25px;
+    box-shadow:var(--shadow);
+}
+
+.rsvp-card h2{
+    font-family:'Cinzel',serif;
+    color:var(--maroon);
+    margin-bottom:20px;
+}
+
+.rsvp-card p{
+    color:#666;
+    margin-bottom:30px;
+}
+
+
+/*======================================
+ THANK YOU
+======================================*/
+
+.thank-you{
+    text-align:center;
+}
+
+.thank-you h1{
+    font-family:'Great Vibes',cursive;
+    font-size:80px;
+    color:var(--gold);
+}
+
+.thank-you p{
+    font-size:20px;
+    color:#555;
+    margin-top:20px;
+}
+
+
+/*======================================
+ FOOTER
+======================================*/
+
+footer{
+    background:#3b2024;
+    color:white;
+    text-align:center;
+    padding:50px 20px;
+}
+
+footer h2{
+    font-family:'Great Vibes',cursive;
+    font-size:55px;
+    color:var(--gold);
+}
+
+footer p{
+    margin:15px 0;
+    color:#ddd;
+}
+
+footer span{
+    color:#aaa;
+    font-size:14px;
+}
+
+
+/*======================================
+ FLOATING BUTTONS
+======================================*/
+
+.floating-buttons{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    z-index:999;
+}
+
+.call-btn,
+.whatsapp-btn{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:28px;
+    color:#fff;
+    box-shadow:0 10px 20px rgba(0,0,0,.25);
+    transition:.3s;
+}
+
+.call-btn{
+    background:#b68b45;
+}
+
+.whatsapp-btn{
+    background:#25D366;
+}
+
+.call-btn:hover,
+.whatsapp-btn:hover{
+    transform:scale(1.12);
+}
+
+
+/*======================================
+ FLOATING DECORATIVE CIRCLES
+======================================*/
+
+.floating-circle{
+    position:fixed;
+    border-radius:50%;
+    z-index:-1;
+    opacity:.15;
+    animation:float 8s ease-in-out infinite;
+}
+
+.circle1{
+    width:220px;
+    height:220px;
+    background:#d8b46d;
+    top:-60px;
+    left:-60px;
+}
+
+.circle2{
+    width:170px;
+    height:170px;
+    background:#b58c44;
+    right:-40px;
+    top:40%;
+}
+
+.circle3{
+    width:260px;
+    height:260px;
+    background:#ead8b2;
+    bottom:-90px;
+    left:30%;
+}
+
+@keyframes float{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-20px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+
+/*======================================
+ FADE ANIMATION
+======================================*/
+
+.hero-content,
+.section,
+.family-card,
+.person-card,
+.event-card,
+.gallery-item,
+.gift-card,
+.rsvp-card{
+    animation:fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(50px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+
+
+
+
+
+
+
+/*======================================
+ RESPONSIVE
+======================================*/
+
+@media(max-width:992px){
+
+    .couple{
+        font-size:70px;
+    }
+
+    .hero-content{
+        padding:30px;
+    }
+
+    .family-card,
+    .person-card{
+        width:100%;
+        max-width:420px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    section{
+        padding:70px 20px;
+    }
+
+    .couple{
+        font-size:55px;
+    }
+
+    .invite-title{
+        font-size:22px;
+    }
+
+    .date-box{
+        padding:20px 25px;
+    }
+
+    .date-box h2{
+        font-size:26px;
+    }
+
+    .story-card,
+    .gift-card,
+    .venue-card,
+    .rsvp-card,
+    .invitation-card{
+        padding:35px 25px;
+    }
+
+    .countdown-box{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .time{
+        width:100%;
+        max-width:250px;
+    }
+
+    footer h2{
+        font-size:42px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .couple{
+        font-size:44px;
+    }
+
+    .section-title h4{
+        font-size:26px;
+    }
+
+    .photo{
+        width:150px;
+        height:150px;
+    }
+
+    .gallery-item{
+        height:220px;
+    }
+
+    .floating-buttons{
+        right:15px;
+        bottom:15px;
+    }
+
+    .call-btn,
+    .whatsapp-btn{
+        width:52px;
+        height:52px;
+        font-size:24px;
+    }
+
+}
