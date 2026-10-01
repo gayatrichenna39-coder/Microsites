@@ -127,7 +127,7 @@ section{
 
     rgba(20,20,20,.55)),
 
-    url("images/palace.jpg");
+    url("couple.jpeg");
 
     background-size:cover;
 
@@ -193,7 +193,7 @@ section{
 
 .couple{
 
-    font-family:'Great Vibes',cursive;
+    font-family:'Allison';
 
     font-size:95px;
 
@@ -688,38 +688,6 @@ section{
     font-size:18px;
     margin-bottom:30px;
 }
-
-
-
-
-/*======================================
- Reception
-======================================*/
-
-.Reception-card{
-    max-width:700px;
-    margin:auto;
-    background:#fff;
-    padding:55px;
-    border-radius:25px;
-    text-align:center;
-    box-shadow:var(--shadow);
-}
-
-.Reception-card h2{
-    font-family:'Cinzel',serif;
-    color:var(--maroon);
-    margin-bottom:20px;
-}
-
-.Reception-card p{
-    color:#555;
-    font-size:18px;
-    margin-bottom:30px;
-}
-
-
-
 
 
 /*======================================
